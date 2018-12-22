@@ -4,14 +4,15 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.abc.MagentoObject.Homepage;
 import com.abc.MagentoObject.Login;
 import com.abc.MagentoObject.Logout;
 
 public class MagentoAppTest {
-
-	public static void main(String[] args) {
+	@Test
+	public void Credentials() {
 		WebDriver driver = new ChromeDriver();
 		String url="http://www.magento.com";
 		driver.manage().window().maximize();
